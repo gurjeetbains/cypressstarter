@@ -7,7 +7,7 @@ This is the cypress script written in JS to have a jump start to directly gettin
 Clone this repository
  
 ```bash
-
+https://github.com/gurjeetbains/cypressstarter.git
 ```
 Install the dependencies using  
  
