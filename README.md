@@ -1,4 +1,4 @@
-# Automation tests for BAU Vogons Testing
+# Automation tests for getting started with Cypress
 
 This is the cypress script written in JS to have a jump start to directly getting started with Cypress. It has logging and reporting all set up along with way to make a database connection as well in the browser
 
