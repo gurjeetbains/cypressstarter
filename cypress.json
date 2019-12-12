@@ -1,0 +1,13 @@
+{
+    "reporter":"mochawesome",
+    "reporterOptions":{
+        "reportDir": "cypress/reports/separate-reports",
+        "quiet": true,
+        "overwrite":false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyyy_HHMMss"
+    },
+    "screenshotsFolder": "cypress/reports/separate-reports/assets",
+    "video": false
+}

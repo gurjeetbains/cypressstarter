@@ -1,0 +1,10 @@
+{
+  "test_url": "https://testurl.com/login",
+  "test2_url": "https://test2.com/",
+  "test2_login": "pick from environment variable",
+  "test2_pass": "pick from environment variable",
+  "test_id": "pick from environment variable",
+  "test_password": "pick from environment variable",
+  "rsp": "Someone",
+  "boc": [1, 2]
+}

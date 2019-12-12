@@ -1,0 +1,31 @@
+{
+  "name": "cypressautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "openrunner": "node_modules/.bin/cypress open",
+    "testheadless": "node_modules/.bin/cypress run",
+    "testheaded": "node_modules/.bin/cypress run --headed",
+    "clean-reports": "rm -rf cypress/reports",
+    "merge-report": "node_modules/.bin/mochawesome-merge --reportDir cypress/reports/separate-reports > cypress/reports/full_report.json",
+    "generate-report": "node_modules/.bin/marge --reportDir cypress/reports cypress/reports/full_report.json",
+    "after:tests": "npm run merge-report; npm run generate-report",
+    "cypress": "npm run clean-reports; npm run testheaded; npm run after:tests",
+    "cypressheadless": "npm run clean-reports; npm run testheadless; npm run after:tests",
+    "mailresults": "node cypress/plugins/mailingclient.js"
+  },
+  "author": "Gurjeet Bains",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cypress": "^3.6.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1",
+    "nodemailer": "^6.3.1",
+    "pg": "^7.12.1"
+  }
+}
