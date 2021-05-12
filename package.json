@@ -25,7 +25,7 @@
     "mochawesome": "^4.1.0",
     "mochawesome-merge": "^2.1.0",
     "mochawesome-report-generator": "^4.0.1",
-    "nodemailer": "^6.3.1",
+    "nodemailer": "^6.4.16",
     "pg": "^7.12.1"
   }
 }
